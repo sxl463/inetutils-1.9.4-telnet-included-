@@ -1,0 +1,22 @@
+stripslash.o: stripslash.c /usr/include/stdc-predef.h ../config.h \
+ ../confpaths.h /usr/include/paths.h dirname.h \
+ /usr/lib/gcc/i686-linux-gnu/4.8/include/stdbool.h stddef.h \
+ /usr/lib/gcc/i686-linux-gnu/4.8/include/stddef.h dosname.h
+
+/usr/include/stdc-predef.h:
+
+../config.h:
+
+../confpaths.h:
+
+/usr/include/paths.h:
+
+dirname.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.8/include/stdbool.h:
+
+stddef.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.8/include/stddef.h:
+
+dosname.h:

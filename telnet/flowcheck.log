@@ -1,0 +1,50 @@
+Trying 172.31.147.163...
+in cmdrc, skiprc = 0
+home:/home/shenliu
+cmdrc, rcfile:/home/shenliu/.telnetrc
+get contents from the rcfile
+get contents from the rcfile
+get contents from the rcfile
+get contents from the rcfile
+get contents from the rcfile
+get contents from the rcfile
+Will map carriage return on output.
+get contents from the rcfile
+get contents from the rcfile
+get contents from the rcfile
+Connected to 172.31.147.163.
+Escape character is '^]'.
+Ubuntu 14.04.6 LTS
+
+cse-p344siis10 login: sxl463
+
+Password: 
+
+Last login: Wed Oct 16 17:03:59 EDT 2019 from cse-p362sos01.cse.psu.edu on pts/30
+
+Welcome to Ubuntu 14.04.6 LTS (GNU/Linux 4.4.0-140-generic x86_64)
+
+
+
+ * Documentation:  https://help.ubuntu.com/
+
+
+
+22 updates can be installed immediately.
+
+18 of these updates are security updates.
+
+
+
+New release '16.04.6 LTS' available.
+
+Run 'do-release-upgrade' to upgrade to it.
+
+
+
+Your Hardware Enablement Stack (HWE) is supported until April 2019.
+
+]0;sxl463@cse-p344siis10: ~sxl463@cse-p344siis10:~$ exit
+
+logout
+

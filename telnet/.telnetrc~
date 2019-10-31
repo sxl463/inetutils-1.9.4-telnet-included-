@@ -1,0 +1,3 @@
+172.31.147.163 toggle crmod
+# Always export $PRINTER
+DEFAULT environ export PRINTER

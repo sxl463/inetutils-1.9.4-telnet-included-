@@ -1,0 +1,222 @@
+At 08051a6d (0): Leaked a bit from tainted branch condition
+At 08051a3b (0): Leaked a bit from tainted branch condition
+At 08051a44 (0): Tainted bits leaked to word operation: 0805da04 000007fc (9 bits)
+At 08051bb4 (0): Tainted bits leaked to word operation: 08065238 000001ff (9 bits)
+At 08051bc8 (0): Tainted bits leaked to word operation: 08065238 000001ff (9 bits)
+At 08051bd4 (0): Tainted bits leaked to word operation: 08065438 000001ff (9 bits)
+At 08051be6 (0): Leaked a bit from tainted branch condition
+At 08051bef (0): Tainted bits leaked to word operation: 08065438 000001ff (9 bits)
+At 08051bf8 (0): Leaked a bit from tainted branch condition
+At 08051c01 (0): Leaked a bit from tainted branch condition
+At 08051a6d (0): Leaked a bit from tainted branch condition
+At 08051a6d (0): Leaked a bit from tainted branch condition
+At 08051a3b (0): Leaked a bit from tainted branch condition
+At 08051a44 (0): Tainted bits leaked to word operation: 0805d9fc 000007fc (9 bits)
+At 0804f588 (0): Tainted bits leaked to word operation: 08065323 000007ff (11 bits)
+At 0804f5b5 (0): Tainted bits leaked to word operation: 08065323 000007ff (11 bits)
+At 0804f5bb (0): Tainted bits leaked to word operation: 08065423 000001ff (9 bits)
+At 0804f5db (0): Tainted bits leaked to word operation: 08065423 000001ff (9 bits)
+At 08051a6d (0): Leaked a bit from tainted branch condition
+At 08051a6d (0): Leaked a bit from tainted branch condition
+At 08051a3b (0): Leaked a bit from tainted branch condition
+At 08051a44 (0): Tainted bits leaked to word operation: 0805da04 000007fc (9 bits)
+At 08051bb4 (0): Tainted bits leaked to word operation: 08065221 000001ff (9 bits)
+At 08051bd4 (0): Tainted bits leaked to word operation: 08065421 000001ff (9 bits)
+At 08051d03 (0): Leaked a bit from tainted branch condition
+At 08051d09 (0): Tainted bits leaked to word operation: 0805da14 000007fc (9 bits)
+At 08052048 (0): Tainted bits leaked to word operation: 08065221 000001ff (9 bits)
+At 08052054 (0): Tainted bits leaked to word operation: 08065421 000001ff (9 bits)
+At 08051bef (0): Tainted bits leaked to word operation: 08065421 000001ff (9 bits)
+At 08051bf8 (0): Leaked a bit from tainted branch condition
+At 08051c01 (0): Leaked a bit from tainted branch condition
+At 08051a6d (0): Leaked a bit from tainted branch condition
+At 08051a3b (0): Leaked a bit from tainted branch condition
+At 08051a44 (0): Tainted bits leaked to word operation: 0805d9fc 000007fc (9 bits)
+At 0804f588 (0): Tainted bits leaked to word operation: 08065321 000007ff (11 bits)
+At 0804f593 (0): Tainted bits leaked to word operation: 08065421 000001ff (9 bits)
+At 0804f5a3 (0): Leaked a bit from tainted branch condition
+At 0804f5a9 (0): Tainted bits leaked to word operation: 0805d95c 000007fc (9 bits)
+At 0804f600 (0): Tainted bits leaked to word operation: 08065421 000001ff (9 bits)
+At 0804f619 (0): Tainted bits leaked to word operation: 08065421 000001ff (9 bits)
+                                                                                  At 0804f5db (0): Tainted bits leaked to word operation: 08065421 000001ff (9 bits)
+            At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                       At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                                  At 08051a6d (0): Leaked a bit from tainted branch condition
+                                     At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                At 08051a6d (0): Leaked a bit from tainted branch condition
+   At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                              At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                                         At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                        At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                                   At 0805235a (0): Leaked a bit from tainted branch condition
+                      At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                 At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                                                            At 08051a6d (0): Leaked a bit from tainted branch condition
+                                               At 08051a76 (0): Leaked a bit from tainted branch condition
+                             At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                        At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                                                                   At 08052366 (0): Leaked a bit from tainted branch condition
+                                                      At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                                 At 08051a6d (0): Leaked a bit from tainted branch condition
+                    At 08051a76 (0): Leaked a bit from tainted branch condition
+  At 080523db (0): Leaked a bit from tainted branch condition
+                                                             At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                                        At 08052366 (0): Leaked a bit from tainted branch condition
+                           At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                      At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                                                                 At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                               At 080523db (0): Leaked a bit from tainted branch condition
+                                  At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                             At 08052366 (0): Leaked a bit from tainted branch condition
+At 0805236f (0): Leaked a bit from tainted branch condition
+                                                           At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                                      At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                    At 080523db (0): Leaked a bit from tainted branch condition
+       At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                  At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                                             At 0805236f (0): Leaked a bit from tainted branch condition
+                                At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                           At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                         At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                                                    At 0805235a (0): Leaked a bit from tainted branch condition
+                                       At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                  At 0805236f (0): Leaked a bit from tainted branch condition
+     At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                At 08051a76 (0): Leaked a bit from tainted branch condition
+                                              At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                         At 0805235a (0): Leaked a bit from tainted branch condition
+            At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                       At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                                  At 08051e93 (0): Leaked a bit from tainted branch condition
+                                     At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                At 08051a76 (0): Leaked a bit from tainted branch condition
+   At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                              At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                         At 08051a6d (0): Leaked a bit from tainted branch condition
+                            At 08051a76 (0): Leaked a bit from tainted branch condition
+                                            At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                       At 0805235a (0): Leaked a bit from tainted branch condition
+          At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                     At 0805236f (0): Leaked a bit from tainted branch condition
+          At 080523db (0): Leaked a bit from tainted branch condition
+                                                                     At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                                                At 08052366 (0): Leaked a bit from tainted branch condition
+                                   At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                                                At 080523db (0): Leaked a bit from tainted branch condition
+                                   At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                              At 08052366 (0): Leaked a bit from tainted branch condition
+ At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                              At 080523db (0): Leaked a bit from tainted branch condition
+ At 0805235a (0): Leaked a bit from tainted branch condition
+                                                            At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                                       At 0805236f (0): Leaked a bit from tainted branch condition
+                                                            At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                                       At 0805235a (0): Leaked a bit from tainted branch condition
+                          At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                     At 0805236f (0): Leaked a bit from tainted branch condition
+                          At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                     At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                                                                At 08052366 (0): Leaked a bit from tainted branch condition
+                                                   At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                                                                At 080523db (0): Leaked a bit from tainted branch condition
+                                                   At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                              At 08052366 (0): Leaked a bit from tainted branch condition
+                 At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                              At 080523db (0): Leaked a bit from tainted branch condition
+                 At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                            At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                                                       At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                            At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                                                       At 0805235a (0): Leaked a bit from tainted branch condition
+                                          At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                     At 0805236f (0): Leaked a bit from tainted branch condition
+                                          At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                     At 0805235a (0): Leaked a bit from tainted branch condition
+        At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                   At 0805236f (0): Leaked a bit from tainted branch condition
+        At 080523db (0): Leaked a bit from tainted branch condition
+                                                                   At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                                              At 08052366 (0): Leaked a bit from tainted branch condition
+                                 At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                                              At 080523db (0): Leaked a bit from tainted branch condition
+                                 At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                            At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                                                                       At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                            At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                                                                       At 0805235a (0): Leaked a bit from tainted branch condition
+                                                          At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                                     At 0805236f (0): Leaked a bit from tainted branch condition
+                                                          At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                                     At 0805235a (0): Leaked a bit from tainted branch condition
+                        At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                   At 0805236f (0): Leaked a bit from tainted branch condition
+                        At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                   At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                                                              At 08052366 (0): Leaked a bit from tainted branch condition
+                                                 At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                                                              At 080523db (0): Leaked a bit from tainted branch condition
+                                                 At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                            At 08051a6d (0): Leaked a bit from tainted branch condition
+               At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                          At 08051e93 (0): Leaked a bit from tainted branch condition
+                                                                                                                                     At 08051a6d (0): Leaked a bit from tainted branch condition
+                                        At 08051a76 (0): Leaked a bit from tainted branch condition
+At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                           At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                      At 08051a6d (0): Leaked a bit from tainted branch condition
+                         At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                    At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                                                               At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                  At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                             At 08051a76 (0): Leaked a bit from tainted branch condition
+At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                           At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                      At 08051a6d (0): Leaked a bit from tainted branch condition
+                         At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                    At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                                                               At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                  At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                             At 08051a76 (0): Leaked a bit from tainted branch condition
+At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                           At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                      At 08051a6d (0): Leaked a bit from tainted branch condition
+                         At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                    At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                                                               At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                  At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                             At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                     At 080523db (0): Leaked a bit from tainted branch condition
+                        At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                   At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                                                              At 0805236f (0): Leaked a bit from tainted branch condition
+                                                 At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                            At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                          At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                                                                     At 0805235a (0): Leaked a bit from tainted branch condition
+                                                        At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                                   At 0805236f (0): Leaked a bit from tainted branch condition
+                      At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                 At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                               At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                                          At 0805235a (0): Leaked a bit from tainted branch condition
+                             At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                        At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                                                                   At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                      At 08051a76 (0): Leaked a bit from tainted branch condition
+                                    At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                               At 0805235a (0): Leaked a bit from tainted branch condition
+  At 08052366 (0): Leaked a bit from tainted branch condition
+                                                             At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                                        At 08051a6d (0): Leaked a bit from tainted branch condition
+                           At 08051a76 (0): Leaked a bit from tainted branch condition
+         At 080523db (0): Leaked a bit from tainted branch condition
+                                                                    At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                                               At 08051a6d (0): Leaked a bit from tainted branch condition
+                                  At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                             At 08051e93 (0): Leaked a bit from tainted branch condition
+At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                           At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                      At 08051a6d (0): Leaked a bit from tainted branch condition
+                         At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                    At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                                                               At 08051a76 (0): Leaked a bit from tainted branch condition

@@ -1,0 +1,46 @@
+ring.c:123:  ring->size = count;
+ring.c:125:  ring->supply = ring->consume = ring->bottom = buffer;
+ring.c:127:  ring->top = ring->bottom + ring->size;
+ring.c:130:  ring->clearto = 0;
+ring.c:145:  ring->mark = ring_decrement (ring, ring->supply, 1);
+ring.c:155:  if (ring->mark == ring->consume)
+ring.c:172:  ring->mark = 0;
+ring.c:181:  ring->supply = ring_increment (ring, ring->supply, count);
+ring.c:182:  ring->supplytime = ++ring_clock;
+ring.c:194:  if (ring->mark && (ring_subtract (ring, ring->mark, ring->consume) < count))
+ring.c:196:      ring->mark = 0;
+ring.c:199:  if (ring->consume < ring->clearto && ring->clearto <= ring->consume + count)
+ring.c:200:    ring->clearto = 0;
+ring.c:201:  else if (ring->consume + count > ring->top &&
+ring.c:202:	   ring->bottom <= ring->clearto &&
+ring.c:203:	   ring->bottom + ((ring->consume + count) - ring->top))
+ring.c:204:    ring->clearto = 0;
+ring.c:206:  ring->consume = ring_increment (ring, ring->consume, count);
+ring.c:207:  ring->consumetime = ++ring_clock;
+ring.c:213:      ring->consume = ring->supply = ring->bottom;
+ring.c:228:      return ring->size;
+ring.c:232:      return ring_subtract (ring, ring->consume, ring->supply);
+ring.c:240:  if ((ring->consume < ring->supply) || ring_empty (ring))
+ring.c:246:      return ring_subtract (ring, ring->top, ring->supply);
+ring.c:253:      return ring_subtract (ring, ring->consume, ring->supply);
+ring.c:264:  if ((ring->mark == 0) || (ring->mark == ring->consume))
+ring.c:268:	  return ring->size;	/* nothing consumed, but full */
+ring.c:272:	  return ring_subtract (ring, ring->supply, ring->consume);
+ring.c:277:      return ring_subtract (ring, ring->mark, ring->consume);
+ring.c:288:  if ((ring->mark == 0) || (ring->mark == ring->consume))
+ring.c:290:      if ((ring->supply < ring->consume) || ring_full (ring))
+ring.c:292:	  return ring_subtract (ring, ring->top, ring->consume);
+ring.c:296:	  return ring_subtract (ring, ring->supply, ring->consume);
+ring.c:301:      if (ring->mark < ring->consume)
+ring.c:303:	  return ring_subtract (ring, ring->top, ring->consume);
+ring.c:307:	  return ring_subtract (ring, ring->mark, ring->consume);
+ring.c:323:      memmove (ring->supply, buffer, i);
+ring.c:336:  if (ring_empty (ring) || ring->clearto == ring->supply)
+ring.c:339:  if (!(c = ring->clearto))
+ring.c:340:    c = ring->consume;
+ring.c:342:  s = ring->supply;
+ring.c:346:      (*encryptor) (c, ring->top - c);
+ring.c:347:      (*encryptor) (ring->bottom, s - ring->bottom);
+ring.c:352:  ring->clearto = ring->supply;
+ring.c:359:    ring->clearto = ring->supply;
+ring.c:361:    ring->clearto = 0;

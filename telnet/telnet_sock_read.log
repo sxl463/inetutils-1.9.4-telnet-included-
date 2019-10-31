@@ -1,0 +1,354 @@
+shenliu@shenliu-Ubuntu1432:~/inetutils-1.9.4/telnet$ ./run-flowcheck.sh
+[sudo] password for shenliu: 
+==6158== Flowcheck-1.20, a secret-leakage detector
+==6158== NOTE: This is an Experimental-Class Valgrind Tool
+==6158== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==6158== Using Valgrind-3.12.0.SVN and LibVEX; rerun with -h for copyright info
+==6158== Command: ./telnet 172.31.147.163
+==6158== 
+Trying 172.31.147.163...
+in cmdrc, skiprc = 0
+home:/home/shenliu
+cmdrc, rcfile:/home/shenliu/.telnetrc
+get contents from the rcfile
+get contents from the rcfile
+get contents from the rcfile
+get contents from the rcfile
+get contents from the rcfile
+get contents from the rcfile
+Will map carriage return on output.
+get contents from the rcfile
+get contents from the rcfile
+get contents from the rcfile
+Connected to 172.31.147.163.
+Escape character is '^]'.
+At 08051a6d (0): Leaked a bit from tainted branch condition
+At 08051a3b (0): Leaked a bit from tainted branch condition
+At 08051a44 (0): Tainted bits leaked to word operation: 0805da04 000007fc (9 bits)
+At 08051bb4 (0): Tainted bits leaked to word operation: 08065238 000001ff (9 bits)
+At 08051bc8 (0): Tainted bits leaked to word operation: 08065238 000001ff (9 bits)
+At 08051bd4 (0): Tainted bits leaked to word operation: 08065438 000001ff (9 bits)
+At 08051be6 (0): Leaked a bit from tainted branch condition
+At 08051bef (0): Tainted bits leaked to word operation: 08065438 000001ff (9 bits)
+At 08051bf8 (0): Leaked a bit from tainted branch condition
+At 08051c01 (0): Leaked a bit from tainted branch condition
+At 08051a6d (0): Leaked a bit from tainted branch condition
+At 08051a6d (0): Leaked a bit from tainted branch condition
+At 08051a3b (0): Leaked a bit from tainted branch condition
+At 08051a44 (0): Tainted bits leaked to word operation: 0805d9fc 000007fc (9 bits)
+At 0804f588 (0): Tainted bits leaked to word operation: 08065323 000007ff (11 bits)
+At 0804f5b5 (0): Tainted bits leaked to word operation: 08065323 000007ff (11 bits)
+At 0804f5bb (0): Tainted bits leaked to word operation: 08065423 000001ff (9 bits)
+At 0804f5db (0): Tainted bits leaked to word operation: 08065423 000001ff (9 bits)
+At 08051a6d (0): Leaked a bit from tainted branch condition
+At 08051a6d (0): Leaked a bit from tainted branch condition
+At 08051a3b (0): Leaked a bit from tainted branch condition
+At 08051a44 (0): Tainted bits leaked to word operation: 0805da04 000007fc (9 bits)
+At 08051bb4 (0): Tainted bits leaked to word operation: 08065221 000001ff (9 bits)
+At 08051bd4 (0): Tainted bits leaked to word operation: 08065421 000001ff (9 bits)
+At 08051d03 (0): Leaked a bit from tainted branch condition
+At 08051d09 (0): Tainted bits leaked to word operation: 0805da14 000007fc (9 bits)
+At 08052048 (0): Tainted bits leaked to word operation: 08065221 000001ff (9 bits)
+At 08052054 (0): Tainted bits leaked to word operation: 08065421 000001ff (9 bits)
+At 08051bef (0): Tainted bits leaked to word operation: 08065421 000001ff (9 bits)
+At 08051bf8 (0): Leaked a bit from tainted branch condition
+At 08051c01 (0): Leaked a bit from tainted branch condition
+==6158== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==6158==    at 0x4138811: send (socket.S:63)
+==6158==    by 0x804DA4E: netflush (network.c:175)
+==6158==    by 0x804F068: process_rings (sys_bsd.c:1370)
+==6158==    by 0x80521E7: Scheduler (telnet.c:2384)
+==6158==    by 0x8052853: telnet (telnet.c:2475)
+==6158==    by 0x804D002: tn (commands.c:2819)
+==6158==    by 0x8049D72: main (main.c:398)
+==6158==  Address 0x80656e2 is 2 bytes inside data symbol "netobuf"
+==6158== 
+At 08051a6d (0): Leaked a bit from tainted branch condition
+At 08051a3b (0): Leaked a bit from tainted branch condition
+At 08051a44 (0): Tainted bits leaked to word operation: 0805d9fc 000007fc (9 bits)
+At 0804f588 (0): Tainted bits leaked to word operation: 08065321 000007ff (11 bits)
+At 0804f593 (0): Tainted bits leaked to word operation: 08065421 000001ff (9 bits)
+At 0804f5a3 (0): Leaked a bit from tainted branch condition
+At 0804f5a9 (0): Tainted bits leaked to word operation: 0805d95c 000007fc (9 bits)
+At 0804f600 (0): Tainted bits leaked to word operation: 08065421 000001ff (9 bits)
+At 0804f619 (0): Tainted bits leaked to word operation: 08065421 000001ff (9 bits)
+                                                                                  At 0804f5db (0): Tainted bits leaked to word operation: 08065421 000001ff (9 bits)
+            At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                       At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                                  At 08051a6d (0): Leaked a bit from tainted branch condition
+                                     At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                At 08051a6d (0): Leaked a bit from tainted branch condition
+   At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                              At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                                         At 08051a76 (0): Leaked a bit from tainted branch condition
+                            Leaking 32 bits via write(buf) of 43 bytes
+                                                                      Ubuntu 14.04.6 LTS
+
+cse-p344siis10 login: Read 1 secret bytes from read(buf)
+                                                        At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                                   At 0805235a (0): Leaked a bit from tainted branch condition
+                      At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                 At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                                                            At 08051a6d (0): Leaked a bit from tainted branch condition
+                                               At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                          Leaking 8 bits via write(buf) of 1 bytes
+                                                                                                                                                  sRead 1 secret bytes from read(buf)
+                             At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                        At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                                                                   At 08052366 (0): Leaked a bit from tainted branch condition
+                                                      At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                                 At 08051a6d (0): Leaked a bit from tainted branch condition
+                    At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                               Leaking 8 bits via write(buf) of 1 bytes
+                                                                                                                       xRead 1 secret bytes from read(buf)
+  At 080523db (0): Leaked a bit from tainted branch condition
+                                                             At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                                        At 08052366 (0): Leaked a bit from tainted branch condition
+                           At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                      At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                                                                 At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                    Leaking 8 bits via write(buf) of 1 bytes
+                                                                                            lRead 1 secret bytes from read(buf)
+                                                                                                                               At 080523db (0): Leaked a bit from tainted branch condition
+                                  At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                             At 08052366 (0): Leaked a bit from tainted branch condition
+At 0805236f (0): Leaked a bit from tainted branch condition
+                                                           At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                                      At 08051a76 (0): Leaked a bit from tainted branch condition
+                         Leaking 8 bits via write(buf) of 1 bytes
+                                                                 4Read 1 secret bytes from read(buf)
+                                                                                                    At 080523db (0): Leaked a bit from tainted branch condition
+       At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                  At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                                             At 0805236f (0): Leaked a bit from tainted branch condition
+                                At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                           At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                                                      Leaking 8 bits via write(buf) of 1 bytes
+                                      6Read 1 secret bytes from read(buf)
+                                                                         At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                                                    At 0805235a (0): Leaked a bit from tainted branch condition
+                                       At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                  At 0805236f (0): Leaked a bit from tainted branch condition
+     At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                           Leaking 8 bits via write(buf) of 1 bytes
+           3Read 1 secret bytes from read(buf)
+                                              At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                         At 0805235a (0): Leaked a bit from tainted branch condition
+            At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                       At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                                  At 08051e93 (0): Leaked a bit from tainted branch condition
+                                     At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                At 08051a76 (0): Leaked a bit from tainted branch condition
+   At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                              At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                         At 08051a6d (0): Leaked a bit from tainted branch condition
+                            At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                       Leaking 24 bits via write(buf) of 13 bytes
+
+
+Password: Read 1 secret bytes from read(buf)
+                                            At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                       At 0805235a (0): Leaked a bit from tainted branch condition
+          At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                     At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                                                Read 1 secret bytes from read(buf)
+          At 080523db (0): Leaked a bit from tainted branch condition
+                                                                     At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                                                At 08052366 (0): Leaked a bit from tainted branch condition
+                                   At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                              Read 1 secret bytes from read(buf)
+                                                                                                                                At 080523db (0): Leaked a bit from tainted branch condition
+                                   At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                              At 08052366 (0): Leaked a bit from tainted branch condition
+ At 0805236f (0): Leaked a bit from tainted branch condition
+                                                            Read 1 secret bytes from read(buf)
+                                                                                              At 080523db (0): Leaked a bit from tainted branch condition
+ At 0805235a (0): Leaked a bit from tainted branch condition
+                                                            At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                                       At 0805236f (0): Leaked a bit from tainted branch condition
+                          Read 1 secret bytes from read(buf)
+                                                            At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                                       At 0805235a (0): Leaked a bit from tainted branch condition
+                          At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                     At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                                                                Read 1 secret bytes from read(buf)
+                          At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                     At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                                                                At 08052366 (0): Leaked a bit from tainted branch condition
+                                                   At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                              Read 1 secret bytes from read(buf)
+                                                                                                                                                At 080523db (0): Leaked a bit from tainted branch condition
+                                                   At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                              At 08052366 (0): Leaked a bit from tainted branch condition
+                 At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                            Read 1 secret bytes from read(buf)
+                                                                                                              At 080523db (0): Leaked a bit from tainted branch condition
+                 At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                            At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                                                       At 0805236f (0): Leaked a bit from tainted branch condition
+                                          Read 1 secret bytes from read(buf)
+                                                                            At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                                                       At 0805235a (0): Leaked a bit from tainted branch condition
+                                          At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                     At 0805236f (0): Leaked a bit from tainted branch condition
+        Read 1 secret bytes from read(buf)
+                                          At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                     At 0805235a (0): Leaked a bit from tainted branch condition
+        At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                   At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                                              Read 1 secret bytes from read(buf)
+        At 080523db (0): Leaked a bit from tainted branch condition
+                                                                   At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                                              At 08052366 (0): Leaked a bit from tainted branch condition
+                                 At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                            Read 1 secret bytes from read(buf)
+                                                                                                                              At 080523db (0): Leaked a bit from tainted branch condition
+                                 At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                            At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                                                                       At 0805236f (0): Leaked a bit from tainted branch condition
+                                                          Read 1 secret bytes from read(buf)
+                                                                                            At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                                                                       At 0805235a (0): Leaked a bit from tainted branch condition
+                                                          At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                                     At 0805236f (0): Leaked a bit from tainted branch condition
+                        Read 1 secret bytes from read(buf)
+                                                          At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                                     At 0805235a (0): Leaked a bit from tainted branch condition
+                        At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                   At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                                                              Read 1 secret bytes from read(buf)
+                        At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                   At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                                                              At 08052366 (0): Leaked a bit from tainted branch condition
+                                                 At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                            Read 1 secret bytes from read(buf)
+                                                                                                                                              At 080523db (0): Leaked a bit from tainted branch condition
+                                                 At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                            At 08051a6d (0): Leaked a bit from tainted branch condition
+               At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                          At 08051e93 (0): Leaked a bit from tainted branch condition
+                                                                                                                                     At 08051a6d (0): Leaked a bit from tainted branch condition
+                                        At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                   Leaking 8 bits via write(buf) of 3 bytes
+
+
+At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                           At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                      At 08051a6d (0): Leaked a bit from tainted branch condition
+                         At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                    At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                                                               At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                  At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                             At 08051a76 (0): Leaked a bit from tainted branch condition
+                Leaking 32 bits via write(buf) of 84 bytes
+                                                          Last login: Wed Oct 16 17:01:02 EDT 2019 from cse-p362sos01.cse.psu.edu on pts/30
+
+At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                           At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                      At 08051a6d (0): Leaked a bit from tainted branch condition
+                         At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                    At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                                                               At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                  At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                             At 08051a76 (0): Leaked a bit from tainted branch condition
+                Leaking 32 bits via write(buf) of 368 bytes
+                                                           Welcome to Ubuntu 14.04.6 LTS (GNU/Linux 4.4.0-140-generic x86_64)
+
+
+
+ * Documentation:  https://help.ubuntu.com/
+
+
+
+22 updates can be installed immediately.
+
+18 of these updates are security updates.
+
+
+
+New release '16.04.6 LTS' available.
+
+Run 'do-release-upgrade' to upgrade to it.
+
+
+
+Your Hardware Enablement Stack (HWE) is supported until April 2019.
+
+At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                           At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                      At 08051a6d (0): Leaked a bit from tainted branch condition
+                         At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                    At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                                                               At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                  At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                             At 08051a76 (0): Leaked a bit from tainted branch condition
+                Leaking 32 bits via write(buf) of 54 bytes
+                                                          sxl463@cse-p344siis10:~$ Read 1 secret bytes from read(buf)
+                                                                                                                     At 080523db (0): Leaked a bit from tainted branch condition
+                        At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                   At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                                                              At 0805236f (0): Leaked a bit from tainted branch condition
+                                                 At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                            At 08051a76 (0): Leaked a bit from tainted branch condition
+               Leaking 8 bits via write(buf) of 1 bytes
+                                                       eRead 1 secret bytes from read(buf)
+                                                                                          At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                                                                     At 0805235a (0): Leaked a bit from tainted branch condition
+                                                        At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                                                   At 0805236f (0): Leaked a bit from tainted branch condition
+                      At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                 At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                                            Leaking 8 bits via write(buf) of 1 bytes
+                            xRead 1 secret bytes from read(buf)
+                                                               At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                                                          At 0805235a (0): Leaked a bit from tainted branch condition
+                             At 08052366 (0): Leaked a bit from tainted branch condition
+                                                                                        At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                                                                   At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                      At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                 Leaking 8 bits via write(buf) of 1 bytes
+ iRead 1 secret bytes from read(buf)
+                                    At 080523db (0): Leaked a bit from tainted branch condition
+                                                                                               At 0805235a (0): Leaked a bit from tainted branch condition
+  At 08052366 (0): Leaked a bit from tainted branch condition
+                                                             At 0805236f (0): Leaked a bit from tainted branch condition
+                                                                                                                        At 08051a6d (0): Leaked a bit from tainted branch condition
+                           At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                      Leaking 8 bits via write(buf) of 1 bytes
+                                                                                                                              tRead 1 secret bytes from read(buf)
+         At 080523db (0): Leaked a bit from tainted branch condition
+                                                                    At 0805235a (0): Leaked a bit from tainted branch condition
+                                                                                                                               At 08051a6d (0): Leaked a bit from tainted branch condition
+                                  At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                             At 08051e93 (0): Leaked a bit from tainted branch condition
+At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                           At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                                                      At 08051a6d (0): Leaked a bit from tainted branch condition
+                         At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                                                    At 08051a6d (0): Leaked a bit from tainted branch condition
+                                                                                                                                               At 08051a76 (0): Leaked a bit from tainted branch condition
+                                                  Leaking 24 bits via write(buf) of 12 bytes
+
+
+logout
+
+Connection closed by foreign host.
+==6158== 
+==6158== HEAP SUMMARY:
+==6158==     in use at exit: 3,740 bytes in 64 blocks
+==6158==   total heap usage: 197 allocs, 133 frees, 21,335 bytes allocated
+==6158== 
+==6158== LEAK SUMMARY:
+==6158==    definitely lost: 0 bytes in 0 blocks
+==6158==    indirectly lost: 0 bytes in 0 blocks
+==6158==      possibly lost: 0 bytes in 0 blocks
+==6158==    still reachable: 3,740 bytes in 64 blocks
+==6158==         suppressed: 0 bytes in 0 blocks
+==6158== Rerun with --leak-check=full to see details of leaked memory
+==6158== 
+==6158== For counts of detected and suppressed errors, rerun with: -v
+==6158== Use --track-origins=yes to see where uninitialised values come from
+Leaked 684 bits total
+Uncollapsed graph had 2915 nodes, 3794 edges
+==6158== ERROR SUMMARY: 27 errors from 1 contexts (suppressed: 0 from 0)
